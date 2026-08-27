@@ -8,19 +8,19 @@
     "reliability": "high"
   },
   {
+    "id": "src_city_finance",
+    "organization": "総務省 / 各自治体財政課",
+    "type": "official",
+    "title": "市町村別決算状況調・市税内訳",
+    "date": "2025-10-01",
+    "reliability": "high"
+  },
+  {
     "id": "src_mlit_flow",
     "organization": "国土交通省",
     "type": "estimate",
     "title": "全国幹線旅客・貨物純流動調査(推計)",
     "date": "2025-10-01",
     "reliability": "medium"
-  },
-  {
-    "id": "src_sample_job",
-    "organization": "はたらきマップ開発検証",
-    "type": "sample",
-    "title": "UI検証用ダミー求人データ",
-    "date": "2026-08-27",
-    "reliability": "none"
   }
 ]
