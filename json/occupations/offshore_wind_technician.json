@@ -3,6 +3,7 @@
   "name": "洋上風力発電メンテナンス員",
   "category": "energy",
   "description": "風力発電タービン・受変電装置の保守・点検業務。",
+  "search_keyword": "風力発電 メンテナンス 電気",
   "work": [
     "ナセル内点検",
     "受変電装置診断",
@@ -25,8 +26,13 @@
     "indoor": false,
     "air_conditioned": false
   },
-  "demand_factors": [
-    "equipment_stock",
-    "legal_inspection"
-  ]
+  "automation_resistance": 0.96,
+  "demand": {
+    "score": 75,
+    "status": "mid",
+    "reasons": [
+      "洋上風力発電基地港湾化に伴う新規育成需要",
+      "高所作業と電気取扱の複合技能者不足"
+    ]
+  }
 }
