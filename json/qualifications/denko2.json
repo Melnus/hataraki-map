@@ -1,0 +1,20 @@
+{
+  "id": "denko2",
+  "name": "第二種電気工事士",
+  "category": "electrical",
+  "legal_status": {
+    "type": "regulated",
+    "human_required": true
+  },
+  "occupations": [
+    "facility_maintenance",
+    "plant_maintenance",
+    "offshore_wind_technician"
+  ],
+  "career_tree": [
+    "見習い・補助",
+    "第二種電気工事士 (一般設備)",
+    "第一種電気工事士 (工場・特高)",
+    "第三種電気主任技術者 (統括)"
+  ]
+}

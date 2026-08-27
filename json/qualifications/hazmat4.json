@@ -1,0 +1,17 @@
+{
+  "id": "hazmat4",
+  "name": "危険物取扱者 乙種4類",
+  "category": "chemical",
+  "legal_status": {
+    "type": "regulated",
+    "human_required": true
+  },
+  "occupations": [
+    "plant_maintenance"
+  ],
+  "career_tree": [
+    "施設取扱補助",
+    "危険物専任者 (タンクローリー/製造所)",
+    "甲種危険物取扱者 (全類統括)"
+  ]
+}

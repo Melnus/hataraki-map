@@ -1,0 +1,17 @@
+{
+  "id": "forklift",
+  "name": "フォークリフト技能講習修了",
+  "category": "logistics",
+  "legal_status": {
+    "type": "certified",
+    "human_required": true
+  },
+  "occupations": [
+    "forklift_operator"
+  ],
+  "career_tree": [
+    "構内作業",
+    "カウンター/リーチフォーク技能",
+    "配車・バース統括リーダー"
+  ]
+}
