@@ -1,0 +1,32 @@
+{
+  "id": "plant_maintenance",
+  "name": "プラント機械・配管保全士",
+  "category": "chemical",
+  "description": "石油化学コンビナートでの高圧配管・機器の点検・修繕。",
+  "work": [
+    "バルブ分解点検",
+    "高圧配管溶接",
+    "回転機芯出し"
+  ],
+  "qualifications": {
+    "required": [],
+    "preferred": [
+      "denko2",
+      "hazmat4"
+    ]
+  },
+  "facilities": [
+    "petrochemical_complex"
+  ],
+  "environment": {
+    "physical_load": 3,
+    "night_shift": false,
+    "indoor": false,
+    "air_conditioned": false
+  },
+  "demand_factors": [
+    "aging_equipment",
+    "legal_inspection",
+    "labor_shortage"
+  ]
+}

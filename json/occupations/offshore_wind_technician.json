@@ -1,0 +1,32 @@
+{
+  "id": "offshore_wind_technician",
+  "name": "洋上風力発電メンテナンス員",
+  "category": "energy",
+  "description": "風力発電タービン・受変電装置の保守・点検業務。",
+  "work": [
+    "ナセル内点検",
+    "受変電装置診断",
+    "ブレード補修"
+  ],
+  "qualifications": {
+    "required": [
+      "denko2"
+    ],
+    "preferred": [
+      "denko1"
+    ]
+  },
+  "facilities": [
+    "offshore_wind_hub"
+  ],
+  "environment": {
+    "physical_load": 3,
+    "night_shift": false,
+    "indoor": false,
+    "air_conditioned": false
+  },
+  "demand_factors": [
+    "equipment_stock",
+    "legal_inspection"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "facility_maintenance",
+  "name": "設備保全・マテハン技術",
+  "category": "maintenance",
+  "description": "物流施設や自動倉庫などの設備を点検・修理・維持する仕事。",
+  "work": [
+    "日常点検",
+    "絶縁測定",
+    "故障時トラブルシュート",
+    "部品交換"
+  ],
+  "qualifications": {
+    "required": [],
+    "preferred": [
+      "denko2"
+    ]
+  },
+  "facilities": [
+    "automated_warehouse",
+    "airport_cargo_terminal"
+  ],
+  "environment": {
+    "physical_load": 2,
+    "night_shift": false,
+    "indoor": true,
+    "air_conditioned": true
+  },
+  "demand_factors": [
+    "equipment_stock",
+    "aging_equipment",
+    "legal_inspection",
+    "automation"
+  ]
+}

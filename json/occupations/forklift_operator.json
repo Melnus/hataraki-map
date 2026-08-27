@@ -1,0 +1,31 @@
+{
+  "id": "forklift_operator",
+  "name": "フォークリフト技能作業員",
+  "category": "logistics",
+  "description": "倉庫内や配送拠点でのパレット荷役および入出荷作業。",
+  "work": [
+    "パレット荷役",
+    "トラック積降",
+    "倉庫内格納"
+  ],
+  "qualifications": {
+    "required": [
+      "forklift"
+    ],
+    "preferred": []
+  },
+  "facilities": [
+    "automated_warehouse"
+  ],
+  "environment": {
+    "physical_load": 3,
+    "night_shift": false,
+    "indoor": true,
+    "air_conditioned": false
+  },
+  "demand_factors": [
+    "logistics_volume",
+    "warehouse_stock",
+    "labor_shortage"
+  ]
+}
