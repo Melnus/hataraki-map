@@ -1,5 +1,5 @@
 /**
- * MapController: MapLibre GL JS による3Dマップおよびアニメーション管理
+ * MapController: MapLibre GL JS による3Dマップおよび物流粒子アニメーション管理
  */
 const MapController = {
     map: null,
@@ -11,8 +11,8 @@ const MapController = {
         this.map = new maplibregl.Map({
             container: 'map',
             style: 'https://tiles.openfreemap.org/styles/dark',
-            center: [140.15, 35.55],
-            zoom: 9.2,
+            center: [140.12, 35.58],
+            zoom: 9.3,
             pitch: 45,
             bearing: -10,
             antialias: true
