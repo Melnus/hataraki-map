@@ -7,11 +7,12 @@
     "human_required": true
   },
   "occupations": [
-    "plant_maintenance"
+    "plant_maintenance",
+    "steel_process_operator"
   ],
   "career_tree": [
     "施設取扱補助",
-    "危険物専任者 (タンクローリー/製造所)",
+    "危険物専任者 (製造所・タンクローリー)",
     "甲種危険物取扱者 (全類統括)"
   ]
 }
