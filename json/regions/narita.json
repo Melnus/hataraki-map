@@ -18,6 +18,13 @@
     "type": "official",
     "source_id": "src_pref_pop"
   },
+  "tax_revenue": {
+    "total": 390,
+    "municipal_tax": 140,
+    "fixed_asset_tax": 210,
+    "corporate_municipal_tax": 35,
+    "source_id": "src_city_finance"
+  },
   "facilities": [
     "airport_cargo_terminal"
   ]
