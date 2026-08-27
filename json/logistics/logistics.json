@@ -1,0 +1,47 @@
+[
+  {
+    "id": "aviation_cargo",
+    "name": "✈️ 国際航空貨物・半導体",
+    "color": "#ff9f43",
+    "volume": {
+      "value": 18500,
+      "unit": "ton/month",
+      "type": "estimate",
+      "source_id": "src_mlit_flow"
+    },
+    "routes": [
+      {
+        "from": [140.3188, 35.7767],
+        "to": [139.9757, 35.8622],
+        "label": "成田空港 ➜ 柏物流ハブ",
+        "width": 4.5
+      }
+    ],
+    "related_occupations": [
+      "facility_maintenance",
+      "forklift_operator"
+    ]
+  },
+  {
+    "id": "petrochemical",
+    "name": "🧪 石油化学基礎品・高圧ガス",
+    "color": "#a55eea",
+    "volume": {
+      "value": 42000,
+      "unit": "ton/month",
+      "type": "estimate",
+      "source_id": "src_mlit_flow"
+    },
+    "routes": [
+      {
+        "from": [140.1171, 35.5014],
+        "to": [139.9757, 35.8622],
+        "label": "市原 ➜ 柏加工拠点",
+        "width": 4.0
+      }
+    ],
+    "related_occupations": [
+      "plant_maintenance"
+    ]
+  }
+]
