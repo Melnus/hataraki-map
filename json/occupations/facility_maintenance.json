@@ -2,7 +2,8 @@
   "id": "facility_maintenance",
   "name": "設備保全・マテハン技術",
   "category": "maintenance",
-  "description": "物流施設や自動倉庫などの設備を点検・修理・維持する仕事。",
+  "description": "物流施設や自動倉庫などの電気・搬送機器を点検・維持する仕事。",
+  "search_keyword": "自動倉庫 設備保全",
   "work": [
     "日常点検",
     "絶縁測定",
@@ -25,10 +26,13 @@
     "indoor": true,
     "air_conditioned": true
   },
-  "demand_factors": [
-    "equipment_stock",
-    "aging_equipment",
-    "legal_inspection",
-    "automation"
-  ]
+  "automation_resistance": 0.95,
+  "demand": {
+    "score": 88,
+    "status": "high",
+    "reasons": [
+      "大型自動倉庫の連続新設に伴うマテハン保全者不足",
+      "24時間稼働に伴う予防保全需要の拡大"
+    ]
+  }
 }
