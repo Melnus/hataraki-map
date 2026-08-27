@@ -1,5 +1,5 @@
 /**
- * InferenceEngine: JSONデータのみを使用して需要スコアと因果チェーンを推計
+ * InferenceEngine: JSONデータのみを使用して多面的な需要スコアと因果チェーンを推計
  */
 const InferenceEngine = {
     calculateDemand(cityId) {
@@ -8,7 +8,6 @@ const InferenceEngine = {
 
         const model = DataStore.demandModel.factors;
         
-        // 関連施設から設備密度と自動化耐性を集約
         const facilities = (city.facilities || [])
             .map(fid => DataStore.facilities.find(f => f.id === fid))
             .filter(Boolean);
@@ -17,9 +16,9 @@ const InferenceEngine = {
             ? facilities.reduce((sum, f) => sum + (f.automation_resistance || 0.8), 0) / facilities.length
             : 0.8;
 
-        const equipScore = Math.min(100, facilities.length * 45);
+        const equipScore = Math.min(100, facilities.length * 35);
         const agingScore = Math.min(100, ((city.aging_rate ? city.aging_rate.value : 25) - 20) * 5);
-        const legalScore = facilities.some(f => f.category === 'chemical' || f.category === 'energy') ? 95 : 75;
+        const legalScore = facilities.some(f => f.category === 'chemical' || f.category === 'energy' || f.category === 'steel') ? 95 : 75;
         const autoScore = avgAutoRes * 100;
         const shortageScore = 80;
 
@@ -57,7 +56,6 @@ const InferenceEngine = {
 
         const chain = [];
         facilities.forEach(fac => {
-            // occupations から該当施設を関連に持つ職種を抽出
             const occs = DataStore.occupations.filter(o => (o.facilities || []).includes(fac.id));
             occs.forEach(occ => {
                 const reqQuals = (occ.qualifications && occ.qualifications.required) || [];
@@ -80,7 +78,13 @@ const InferenceEngine = {
         return chain;
     },
 
-    getJobsForCity(cityId) {
-        return DataStore.jobs.filter(j => j.city_id === cityId);
+    getOccupationsForCity(cityId) {
+        const city = DataStore.regions.find(c => c.id === cityId);
+        if (!city) return [];
+
+        const facilities = (city.facilities || []);
+        return DataStore.occupations.filter(occ => 
+            (occ.facilities || []).some(fid => facilities.includes(fid))
+        );
     }
 };
