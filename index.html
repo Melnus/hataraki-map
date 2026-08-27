@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>はたらきマップ | 地域経済・設備・資格因果探索システム v0.4</title>
+    <title>はたらきマップ | 地域労働・産業設備・資格因果探索システム v0.5</title>
     
     <!-- MapLibre GL JS -->
     <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
     <div id="app-loading" class="overlay-modal">
         <div class="loading-box glass-panel">
             <div class="spinner"></div>
-            <div class="loading-text mono">INITIALIZING CAUSAL GRAPH DATA...</div>
+            <div class="loading-text mono">INITIALIZING REGIONAL WORK INTELLIGENCE...</div>
             <div id="loading-detail" class="loading-sub">manifest.json を読み込み中</div>
         </div>
     </div>
@@ -32,7 +32,7 @@
     <!-- 1. Header -->
     <header id="header" class="glass-panel">
         <h1 class="display">はたらき<span>マップ</span></h1>
-        <div class="sub">因果推計モデル＆リレーショナルグラフ v0.4</div>
+        <div class="sub">地域 × 産業設備 × 職業 × 資格 × 労働条件探索 v0.5</div>
 
         <nav class="mode-nav">
             <button class="mode-btn active" data-mode="region">🗾 地域起点</button>
@@ -61,15 +61,16 @@
         <!-- MODE: Matcher -->
         <div id="mode-matcher" class="mode-container">
             <div class="sec-title mono">WORK STYLE MATCHER</div>
-            <div class="matcher-desc">希望条件によるリアルタイム採点:</div>
+            <div class="matcher-desc">希望する労働条件から最適な職業・地域を逆引き採点:</div>
             <div class="matcher-inputs flex-col gap-8">
                 <label><input type="checkbox" id="m-no-exp" checked> 未経験スタート可能</label>
                 <label><input type="checkbox" id="m-indoor" checked> 屋内環境（空調完備）</label>
                 <label><input type="checkbox" id="m-no-night"> 夜勤なし（日勤固定）</label>
-                <label><input type="checkbox" id="m-sustainable" checked> 高持続需要（自動化耐性90%以上）</label>
+                <label><input type="checkbox" id="m-sustainable" checked> 高持続需要（自動化耐性80%以上）</label>
+                <label><input type="checkbox" id="m-low-physical"> 身体的負荷が低〜中（★2以下）</label>
             </div>
             <button id="btn-run-matcher" class="mode-btn active w-full mt-12">
-                条件一致の求人・地域を抽出
+                条件適合の職業・地域を抽出
             </button>
         </div>
     </aside>
@@ -79,7 +80,7 @@
         <div id="panel-content"></div>
     </aside>
 
-    <!-- Scripts (依存順) -->
+    <!-- Scripts -->
     <script src="./js/data-loader.js"></script>
     <script src="./js/inference.js"></script>
     <script src="./js/matcher.js"></script>
