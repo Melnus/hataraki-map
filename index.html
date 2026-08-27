@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>はたらきマップ | 地域経済・設備・資格因果探索システム v0.4</title>
+    
+    <!-- MapLibre GL JS -->
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Loading / Error Overlay -->
+    <div id="app-loading" class="overlay-modal">
+        <div class="loading-box glass-panel">
+            <div class="spinner"></div>
+            <div class="loading-text mono">INITIALIZING CAUSAL GRAPH DATA...</div>
+            <div id="loading-detail" class="loading-sub">manifest.json を読み込み中</div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- 1. Header -->
+    <header id="header" class="glass-panel">
+        <h1 class="display">はたらき<span>マップ</span></h1>
+        <div class="sub">因果推計モデル＆リレーショナルグラフ v0.4</div>
+
+        <nav class="mode-nav">
+            <button class="mode-btn active" data-mode="region">🗾 地域起点</button>
+            <button class="mode-btn" data-mode="qualification">⚡ 資格起点</button>
+            <button class="mode-btn" data-mode="matcher">🎯 条件逆引き</button>
+        </nav>
+    </header>
+
+    <!-- 2. Left Control Panel -->
+    <aside id="left-panel" class="glass-panel">
+        <!-- MODE: Region -->
+        <div id="mode-region" class="mode-container active">
+            <div class="sec-title mono">LOGISTICS PRODUCTS</div>
+            <div id="product-list" class="flex-col gap-5 mb-14"></div>
+
+            <div class="sec-title mono">EVIDENCE & SOURCES</div>
+            <div id="sources-list" class="flex-col gap-4 font-xs"></div>
+        </div>
+
+        <!-- MODE: Qualification -->
+        <div id="mode-qualification" class="mode-container">
+            <div class="sec-title mono">QUALIFICATION MASTER</div>
+            <div id="qualification-list" class="flex-col gap-6"></div>
+        </div>
+
+        <!-- MODE: Matcher -->
+        <div id="mode-matcher" class="mode-container">
+            <div class="sec-title mono">WORK STYLE MATCHER</div>
+            <div class="matcher-desc">希望条件によるリアルタイム採点:</div>
+            <div class="matcher-inputs flex-col gap-8">
+                <label><input type="checkbox" id="m-no-exp" checked> 未経験スタート可能</label>
+                <label><input type="checkbox" id="m-indoor" checked> 屋内環境（空調完備）</label>
+                <label><input type="checkbox" id="m-no-night"> 夜勤なし（日勤固定）</label>
+                <label><input type="checkbox" id="m-sustainable" checked> 高持続需要（自動化耐性90%以上）</label>
+            </div>
+            <button id="btn-run-matcher" class="mode-btn active w-full mt-12">
+                条件一致の求人・地域を抽出
+            </button>
+        </div>
+    </aside>
+
+    <!-- 3. Right Dashboard Panel -->
+    <aside id="dashboard" class="glass-panel">
+        <div id="panel-content"></div>
+    </aside>
+
+    <!-- Scripts (依存順) -->
+    <script src="./js/data-loader.js"></script>
+    <script src="./js/inference.js"></script>
+    <script src="./js/matcher.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
