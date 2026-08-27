@@ -1,0 +1,22 @@
+{
+  "id": "steel_works",
+  "name": "臨海大型製鉄所・圧延プラント",
+  "category": "steel",
+  "equipment": [
+    "高炉・転炉設備",
+    "連続鋳造機",
+    "熱間圧延ロールライン",
+    "大容量自家変電所"
+  ],
+  "maintenance_needs": [
+    "ロール軸受交換",
+    "耐火ライニング補修",
+    "重電系統保全"
+  ],
+  "related_qualifications": [
+    "denko2",
+    "denko1",
+    "hazmat4"
+  ],
+  "automation_resistance": 0.94
+}

@@ -1,0 +1,21 @@
+{
+  "id": "food_factory",
+  "name": "食品加工コンビナート・冷凍自動ライン",
+  "category": "food",
+  "equipment": [
+    "連続蒸炊・殺菌機",
+    "急速フリーザー",
+    "自動包装・金属探知機",
+    "蒸気ボイラー"
+  ],
+  "maintenance_needs": [
+    "ボイラー圧力点検",
+    "衛生配管CIP洗浄点検",
+    "包装機メカトロ保守"
+  ],
+  "related_qualifications": [
+    "boiler2",
+    "denko2"
+  ],
+  "automation_resistance": 0.85
+}
