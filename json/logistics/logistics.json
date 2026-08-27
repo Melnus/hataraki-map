@@ -38,10 +38,17 @@
         "to": [139.9757, 35.8622],
         "label": "市原 ➜ 柏加工拠点",
         "width": 4.0
+      },
+      {
+        "from": [140.1171, 35.5014],
+        "to": [139.9256, 35.3817],
+        "label": "市原 ➜ 木更津臨海工業地帯",
+        "width": 3.8
       }
     ],
     "related_occupations": [
-      "plant_maintenance"
+      "plant_maintenance",
+      "steel_process_operator"
     ]
   }
 ]
