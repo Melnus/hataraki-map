@@ -18,6 +18,13 @@
     "type": "official",
     "source_id": "src_pref_pop"
   },
+  "tax_revenue": {
+    "total": 590,
+    "municipal_tax": 210,
+    "fixed_asset_tax": 310,
+    "corporate_municipal_tax": 55,
+    "source_id": "src_city_finance"
+  },
   "facilities": [
     "petrochemical_complex"
   ]
