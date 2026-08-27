@@ -1,0 +1,19 @@
+{
+  "id": "boiler2",
+  "name": "二級ボイラー技士",
+  "category": "machine",
+  "legal_status": {
+    "type": "regulated",
+    "human_required": true
+  },
+  "occupations": [
+    "food_machine_operator",
+    "plant_maintenance"
+  ],
+  "career_tree": [
+    "ボイラー取扱補助",
+    "二級ボイラー技士 (一般工場)",
+    "一級ボイラー技士",
+    "特級ボイラー技士"
+  ]
+}
