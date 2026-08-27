@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "factors": {
+    "equipment_stock": 0.30,
+    "aging_equipment": 0.25,
+    "legal_inspection": 0.20,
+    "automation_resistance": 0.15,
+    "labor_shortage": 0.10
+  },
+  "labels": [
+    {
+      "min": 0,
+      "max": 49,
+      "label": "安定・充足",
+      "color": "#3ddc97"
+    },
+    {
+      "min": 50,
+      "max": 69,
+      "label": "注意・構造変化",
+      "color": "#f5c542"
+    },
+    {
+      "min": 70,
+      "max": 84,
+      "label": "需要増加",
+      "color": "#ff9f43"
+    },
+    {
+      "min": 85,
+      "max": 100,
+      "label": "極めて高需要",
+      "color": "#ff5c6c"
+    }
+  ]
+}
