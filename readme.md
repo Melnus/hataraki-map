@@ -3,7 +3,7 @@
 > *※ 本ドキュメントは `README.md` および AIコーディングエージェント向け指示書 `AGENT.md` を兼ねています。*
 
 ---
-![](https://github.com/Melnus/hataraki-map/blob/main/images/home.jpg)
+![](https://github.com/Melnus/hataraki-map/blob/main/images/main.jpg)
 
 
 ---
