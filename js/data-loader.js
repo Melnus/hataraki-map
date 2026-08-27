@@ -1,6 +1,5 @@
 /**
  * DataStore: アプリケーション全体で共有されるデータコンテナ
- * JavaScript内には一切のマスターデータを直書きしない
  */
 const DataStore = {
     regions: [],
@@ -33,7 +32,7 @@ const DataLoader = {
             DataStore.occupations = await this._loadCategory(manifest.occupations, "occupations", onProgress);
             // 4. Qualifications
             DataStore.qualifications = await this._loadCategory(manifest.qualifications, "qualifications", onProgress);
-            // 5. Jobs
+            // 5. Jobs / Search Metadata
             const jobsData = await this._loadCategory(manifest.jobs, "jobs", onProgress);
             DataStore.jobs = jobsData.flat();
             // 6. Logistics
