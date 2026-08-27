@@ -1,0 +1,22 @@
+{
+  "id": "petrochemical_complex",
+  "name": "石油化学コンビナート・脱炭素設備",
+  "category": "chemical",
+  "equipment": [
+    "高圧反応タワー",
+    "危険物配管網",
+    "計装制御システム",
+    "自家発電プラント"
+  ],
+  "maintenance_needs": [
+    "定期修繕(定修)",
+    "非破壊検査",
+    "防爆電気工事"
+  ],
+  "related_qualifications": [
+    "denko2",
+    "denko1",
+    "hazmat4"
+  ],
+  "automation_resistance": 0.98
+}

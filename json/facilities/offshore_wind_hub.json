@@ -1,0 +1,20 @@
+{
+  "id": "offshore_wind_hub",
+  "name": "洋上風力発電メンテナンス基地",
+  "category": "energy",
+  "equipment": [
+    "洋上風力タービン",
+    "特別高圧変電所",
+    "海底送電ケーブル陸揚局"
+  ],
+  "maintenance_needs": [
+    "タワー高所点検",
+    "ブレード検査",
+    "特高絶縁診断"
+  ],
+  "related_qualifications": [
+    "denko2",
+    "denko1"
+  ],
+  "automation_resistance": 0.96
+}

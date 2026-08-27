@@ -1,0 +1,23 @@
+{
+  "id": "automated_warehouse",
+  "name": "先進型自動倉庫・ECハブ",
+  "category": "logistics",
+  "equipment": [
+    "立体自動コンベヤ",
+    "スタッカークレーン",
+    "受変電盤",
+    "産業用大型空調",
+    "自動消火設備"
+  ],
+  "maintenance_needs": [
+    "受変電点検",
+    "メカトロ修理",
+    "法定絶縁測定"
+  ],
+  "related_qualifications": [
+    "denko2",
+    "denko1",
+    "hazmat4"
+  ],
+  "automation_resistance": 0.95
+}

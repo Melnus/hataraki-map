@@ -1,0 +1,20 @@
+{
+  "id": "airport_cargo_terminal",
+  "name": "成田国際航空貨物ターミナル",
+  "category": "aviation",
+  "equipment": [
+    "航空コンテナ移送ドック",
+    "定温保冷庫",
+    "X線大型検査機",
+    "特殊給油施設"
+  ],
+  "maintenance_needs": [
+    "航空貨物設備点検",
+    "急速冷却系統保守"
+  ],
+  "related_qualifications": [
+    "denko2",
+    "hazmat4"
+  ],
+  "automation_resistance": 0.92
+}
