@@ -3,6 +3,7 @@
   "name": "フォークリフト技能作業員",
   "category": "logistics",
   "description": "倉庫内や配送拠点でのパレット荷役および入出荷作業。",
+  "search_keyword": "フォークリフト",
   "work": [
     "パレット荷役",
     "トラック積降",
@@ -15,7 +16,8 @@
     "preferred": []
   },
   "facilities": [
-    "automated_warehouse"
+    "automated_warehouse",
+    "food_factory"
   ],
   "environment": {
     "physical_load": 3,
@@ -23,9 +25,13 @@
     "indoor": true,
     "air_conditioned": false
   },
-  "demand_factors": [
-    "logistics_volume",
-    "warehouse_stock",
-    "labor_shortage"
-  ]
+  "automation_resistance": 0.72,
+  "demand": {
+    "score": 78,
+    "status": "high",
+    "reasons": [
+      "EC物流量の増加に伴う荷役需要",
+      "トラックドライバー積み降ろし分離による構内荷役特化"
+    ]
+  }
 }
