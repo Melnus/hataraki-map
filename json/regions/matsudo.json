@@ -1,0 +1,31 @@
+{
+  "id": "matsudo",
+  "name": "松戸市",
+  "area": "東葛地域",
+  "location": {
+    "lat": 35.7878,
+    "lng": 139.9038
+  },
+  "population": {
+    "value": 498200,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 27.9,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "tax_revenue": {
+    "total": 840,
+    "municipal_tax": 470,
+    "fixed_asset_tax": 320,
+    "corporate_municipal_tax": 42,
+    "source_id": "src_city_finance"
+  },
+  "facilities": [
+    "food_factory"
+  ]
+}

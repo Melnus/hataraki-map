@@ -1,0 +1,31 @@
+{
+  "id": "ichikawa",
+  "name": "市川市",
+  "area": "葛南・都心近接",
+  "location": {
+    "lat": 35.7219,
+    "lng": 139.9304
+  },
+  "population": {
+    "value": 496800,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 24.5,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "tax_revenue": {
+    "total": 920,
+    "municipal_tax": 530,
+    "fixed_asset_tax": 340,
+    "corporate_municipal_tax": 40,
+    "source_id": "src_city_finance"
+  },
+  "facilities": [
+    "automated_warehouse"
+  ]
+}

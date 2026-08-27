@@ -1,0 +1,32 @@
+{
+  "id": "chiba",
+  "name": "千葉市",
+  "area": "県央・政令市",
+  "location": {
+    "lat": 35.6051,
+    "lng": 140.1233
+  },
+  "population": {
+    "value": 978000,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 27.4,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "tax_revenue": {
+    "total": 1950,
+    "municipal_tax": 980,
+    "fixed_asset_tax": 790,
+    "corporate_municipal_tax": 140,
+    "source_id": "src_city_finance"
+  },
+  "facilities": [
+    "automated_warehouse",
+    "food_factory"
+  ]
+}

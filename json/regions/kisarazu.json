@@ -1,0 +1,31 @@
+{
+  "id": "kisarazu",
+  "name": "木更津市",
+  "area": "かずさ・臨海",
+  "location": {
+    "lat": 35.3817,
+    "lng": 139.9256
+  },
+  "population": {
+    "value": 136200,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 29.8,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "tax_revenue": {
+    "total": 310,
+    "municipal_tax": 120,
+    "fixed_asset_tax": 160,
+    "corporate_municipal_tax": 24,
+    "source_id": "src_city_finance"
+  },
+  "facilities": [
+    "steel_works"
+  ]
+}

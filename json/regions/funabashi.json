@@ -1,0 +1,32 @@
+{
+  "id": "funabashi",
+  "name": "船橋市",
+  "area": "湾岸・葛南",
+  "location": {
+    "lat": 35.6947,
+    "lng": 139.9825
+  },
+  "population": {
+    "value": 647500,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 25.8,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "tax_revenue": {
+    "total": 1120,
+    "municipal_tax": 610,
+    "fixed_asset_tax": 440,
+    "corporate_municipal_tax": 60,
+    "source_id": "src_city_finance"
+  },
+  "facilities": [
+    "food_factory",
+    "automated_warehouse"
+  ]
+}
