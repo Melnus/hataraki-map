@@ -1,0 +1,36 @@
+{
+  "edges": [
+    {
+      "from": "kashiwa",
+      "to": "automated_warehouse",
+      "type": "has_facility"
+    },
+    {
+      "from": "automated_warehouse",
+      "to": "facility_maintenance",
+      "type": "creates_demand",
+      "weight": 0.95
+    },
+    {
+      "from": "facility_maintenance",
+      "to": "denko2",
+      "type": "preferred_qualification",
+      "weight": 0.85
+    },
+    {
+      "from": "narita",
+      "to": "airport_cargo_terminal",
+      "type": "has_facility"
+    },
+    {
+      "from": "ichihara",
+      "to": "petrochemical_complex",
+      "type": "has_facility"
+    },
+    {
+      "from": "choshi",
+      "to": "offshore_wind_hub",
+      "type": "has_facility"
+    }
+  ]
+}
