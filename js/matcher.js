@@ -1,33 +1,39 @@
 /**
- * Matcher: JSONの属性から条件一致度をリアルタイム採点
+ * Matcher: 労働条件・環境から適合する職業と地域を逆引き採点
  */
 const Matcher = {
     run(conditions) {
-        // conditions: { noExp: bool, indoor: bool, noNight: bool, sustainable: bool }
-        const scoredJobs = DataStore.jobs.map(job => {
-            let score = 50;
-            const occ = DataStore.occupations.find(o => o.id === job.occupation_id);
-            
-            // 未経験判定
-            const req = (job.qualifications && job.qualifications.required) || [];
-            if (conditions.noExp && req.length === 0) score += 20;
+        const scoredOccupations = [];
 
-            // 環境判定
-            if (conditions.indoor && job.environment && job.environment.indoor) score += 15;
+        DataStore.regions.forEach(city => {
+            const cityOccs = InferenceEngine.getOccupationsForCity(city.id);
+            cityOccs.forEach(occ => {
+                let score = 50;
 
-            // 夜勤判定
-            if (conditions.noNight && job.work && !job.work.night_shift) score += 15;
+                // 未経験判定
+                const req = (occ.qualifications && occ.qualifications.required) || [];
+                if (conditions.noExp && req.length === 0) score += 15;
 
-            // 持続性判定 (職種の自動化耐性等)
-            if (conditions.sustainable && occ) {
-                const facs = (occ.facilities || []).map(fid => DataStore.facilities.find(f => f.id === fid)).filter(Boolean);
-                const avgAuto = facs.reduce((sum, f) => sum + (f.automation_resistance || 0.8), 0) / (facs.length || 1);
-                if (avgAuto >= 0.9) score += 15;
-            }
+                // 屋内判定
+                if (conditions.indoor && occ.environment && occ.environment.indoor) score += 15;
 
-            return { job, occ, score };
-        }).sort((a, b) => b.score - a.score);
+                // 夜勤なし判定
+                if (conditions.noNight && occ.environment && !occ.environment.night_shift) score += 10;
 
-        return scoredJobs;
+                // 持続需要 (自動化耐性)
+                if (conditions.sustainable && (occ.automation_resistance || 0.8) >= 0.8) score += 10;
+
+                // 身体負荷判定
+                if (conditions.lowPhysical && occ.environment && occ.environment.physical_load <= 2) score += 10;
+
+                scoredOccupations.push({
+                    city,
+                    occ,
+                    score
+                });
+            });
+        });
+
+        return scoredOccupations.sort((a, b) => b.score - a.score);
     }
 };
