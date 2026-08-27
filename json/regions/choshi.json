@@ -18,6 +18,13 @@
     "type": "official",
     "source_id": "src_pref_pop"
   },
+  "tax_revenue": {
+    "total": 95,
+    "municipal_tax": 38,
+    "fixed_asset_tax": 48,
+    "corporate_municipal_tax": 7,
+    "source_id": "src_city_finance"
+  },
   "facilities": [
     "offshore_wind_hub"
   ]
