@@ -1,0 +1,37 @@
+{
+  "id": "steel_process_operator",
+  "name": "製鉄圧延プロセスオペレーター",
+  "category": "steel",
+  "description": "臨海製鉄所での鋼材圧延ライン運転・品質モニター監視。",
+  "search_keyword": "製鉄所 オペレーター 圧延",
+  "work": [
+    "計装室モニター監視",
+    "圧延ロール温度調整",
+    "鋼材表面キズ検査"
+  ],
+  "qualifications": {
+    "required": [],
+    "preferred": [
+      "hazmat4",
+      "denko2"
+    ]
+  },
+  "facilities": [
+    "steel_works"
+  ],
+  "environment": {
+    "physical_load": 2,
+    "night_shift": true,
+    "indoor": true,
+    "air_conditioned": true
+  },
+  "automation_resistance": 0.90,
+  "demand": {
+    "score": 68,
+    "status": "mid",
+    "reasons": [
+      "自動車・建材向け高級鋼板製造の稼働維持",
+      "3交替制勤務に伴う人員補充需要"
+    ]
+  }
+}

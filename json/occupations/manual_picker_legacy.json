@@ -1,0 +1,35 @@
+{
+  "id": "manual_picker_legacy",
+  "name": "手動台車ピッキング作業員",
+  "category": "logistics",
+  "description": "伝票を見ながら倉庫内を歩行して商品を集品する従来型作業。",
+  "search_keyword": "倉庫 ピッキング 軽作業",
+  "work": [
+    "棚からの手作業ピック",
+    "台車運搬",
+    "目視検品"
+  ],
+  "qualifications": {
+    "required": [],
+    "preferred": []
+  },
+  "facilities": [
+    "automated_warehouse"
+  ],
+  "environment": {
+    "physical_load": 3,
+    "night_shift": false,
+    "indoor": true,
+    "air_conditioned": false
+  },
+  "automation_resistance": 0.35,
+  "demand": {
+    "score": 24,
+    "status": "low",
+    "reasons": [
+      "自動倉庫(AGV・立体自動ピッキング)導入による急速な自動化代替",
+      "人手不足対策として省人化設備投資が集中している分野",
+      "単価引き下げ競争により長期定着性が低下"
+    ]
+  }
+}

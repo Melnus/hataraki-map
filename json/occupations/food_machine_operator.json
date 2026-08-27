@@ -1,0 +1,37 @@
+{
+  "id": "food_machine_operator",
+  "name": "食品製造機械オペレーター",
+  "category": "food",
+  "description": "食品コンビナートの自動加工・包装機械の運転管理と衛生保守。",
+  "search_keyword": "食品工場 機械オペレーター",
+  "work": [
+    "加工ライン運転監視",
+    "包装機フィルムセット・型替え",
+    "日常洗浄・殺菌"
+  ],
+  "qualifications": {
+    "required": [],
+    "preferred": [
+      "boiler2",
+      "denko2"
+    ]
+  },
+  "facilities": [
+    "food_factory"
+  ],
+  "environment": {
+    "physical_load": 2,
+    "night_shift": true,
+    "indoor": true,
+    "air_conditioned": true
+  },
+  "automation_resistance": 0.80,
+  "demand": {
+    "score": 74,
+    "status": "mid",
+    "reasons": [
+      "首都圏向け中食・冷凍食品需要の拡大",
+      "衛生管理基準(HACCP)高度化による機械管理の厳格化"
+    ]
+  }
+}
