@@ -71,14 +71,15 @@ function initEventListeners() {
                 noExp: document.getElementById("m-no-exp").checked,
                 indoor: document.getElementById("m-indoor").checked,
                 noNight: document.getElementById("m-no-night").checked,
-                sustainable: document.getElementById("m-sustainable").checked
+                sustainable: document.getElementById("m-sustainable").checked,
+                lowPhysical: document.getElementById("m-low-physical").checked
             };
 
             const results = Matcher.run(conditions);
             if (results.length > 0) {
                 const top = results[0];
-                alert(`【Matcher 推定完了】\n最高一致求人: ${top.job.title} (${top.job.company})\n適合スコア: ${top.score}点\n推奨地域: ${top.job.city_id}`);
-                selectCity(top.job.city_id, true);
+                alert(`【Matcher 推定完了】\n最高適合職業: ${top.occ.name} (${top.city.name})\n適合スコア: ${top.score}点\n\n「${top.city.name}」へ移動して詳細を表示します。`);
+                selectCity(top.city.id, true);
             }
         });
     }
