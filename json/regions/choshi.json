@@ -1,0 +1,24 @@
+{
+  "id": "choshi",
+  "name": "銚子市",
+  "area": "北東部・水産",
+  "location": {
+    "lat": 35.7347,
+    "lng": 140.8322
+  },
+  "population": {
+    "value": 54000,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 39.5,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "facilities": [
+    "offshore_wind_hub"
+  ]
+}

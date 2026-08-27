@@ -1,0 +1,24 @@
+{
+  "id": "kashiwa",
+  "name": "柏市",
+  "area": "東葛地域",
+  "location": {
+    "lat": 35.8622,
+    "lng": 139.9757
+  },
+  "population": {
+    "value": 435000,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 26.2,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "facilities": [
+    "automated_warehouse"
+  ]
+}

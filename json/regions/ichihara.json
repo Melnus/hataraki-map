@@ -1,0 +1,24 @@
+{
+  "id": "ichihara",
+  "name": "市原市",
+  "area": "東京湾岸・工業",
+  "location": {
+    "lat": 35.5014,
+    "lng": 140.1171
+  },
+  "population": {
+    "value": 267000,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 31.0,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "facilities": [
+    "petrochemical_complex"
+  ]
+}

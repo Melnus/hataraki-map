@@ -1,0 +1,24 @@
+{
+  "id": "narita",
+  "name": "成田市",
+  "area": "空港・北東部",
+  "location": {
+    "lat": 35.7767,
+    "lng": 140.3188
+  },
+  "population": {
+    "value": 130800,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "aging_rate": {
+    "value": 25.1,
+    "year": 2026,
+    "type": "official",
+    "source_id": "src_pref_pop"
+  },
+  "facilities": [
+    "airport_cargo_terminal"
+  ]
+}
