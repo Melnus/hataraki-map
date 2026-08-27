@@ -2,7 +2,8 @@
   "id": "plant_maintenance",
   "name": "プラント機械・配管保全士",
   "category": "chemical",
-  "description": "石油化学コンビナートでの高圧配管・機器の点検・修繕。",
+  "description": "石油化学コンビナートでの高圧配管・機器の定期修繕・点検。",
+  "search_keyword": "化学プラント 保全 配管",
   "work": [
     "バルブ分解点検",
     "高圧配管溶接",
@@ -24,9 +25,13 @@
     "indoor": false,
     "air_conditioned": false
   },
-  "demand_factors": [
-    "aging_equipment",
-    "legal_inspection",
-    "labor_shortage"
-  ]
+  "automation_resistance": 0.98,
+  "demand": {
+    "score": 92,
+    "status": "high",
+    "reasons": [
+      "ベテラン熟練工の大量退職に伴う技術承継ギャップ",
+      "設備老朽化に伴う定修工事の増加"
+    ]
+  }
 }
