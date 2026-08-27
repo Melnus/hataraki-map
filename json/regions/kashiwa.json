@@ -18,6 +18,13 @@
     "type": "official",
     "source_id": "src_pref_pop"
   },
+  "tax_revenue": {
+    "total": 680,
+    "municipal_tax": 340,
+    "fixed_asset_tax": 270,
+    "corporate_municipal_tax": 45,
+    "source_id": "src_city_finance"
+  },
   "facilities": [
     "automated_warehouse"
   ]
