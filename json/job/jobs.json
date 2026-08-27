@@ -1,0 +1,123 @@
+[
+  {
+    "id": "job_0001",
+    "source": "sample",
+    "city_id": "kashiwa",
+    "company": "東葛ロジスティクス(株)",
+    "occupation_id": "facility_maintenance",
+    "title": "自動倉庫 マテハン設備保全・電気点検",
+    "wage": {
+      "type": "monthly",
+      "min": 310000,
+      "max": 420000
+    },
+    "work": {
+      "hours": "09:00-18:00",
+      "night_shift": false
+    },
+    "environment": {
+      "indoor": true,
+      "air_conditioned": true
+    },
+    "physical_load": 2,
+    "qualifications": {
+      "required": [],
+      "preferred": [
+        "denko2"
+      ]
+    },
+    "qualification_support": true,
+    "source_id": "src_sample_job"
+  },
+  {
+    "id": "job_0002",
+    "source": "sample",
+    "city_id": "kashiwa",
+    "company": "柏の葉スマート物流センター",
+    "occupation_id": "forklift_operator",
+    "title": "リーチフォークリフト作業員（常温・定温）",
+    "wage": {
+      "type": "hourly",
+      "min": 1550,
+      "max": 1850
+    },
+    "work": {
+      "hours": "08:30-17:30",
+      "night_shift": false
+    },
+    "environment": {
+      "indoor": true,
+      "air_conditioned": false
+    },
+    "physical_load": 3,
+    "qualifications": {
+      "required": [
+        "forklift"
+      ],
+      "preferred": []
+    },
+    "qualification_support": false,
+    "source_id": "src_sample_job"
+  },
+  {
+    "id": "job_0003",
+    "source": "sample",
+    "city_id": "ichihara",
+    "company": "京葉ケミカル保全(株)",
+    "occupation_id": "plant_maintenance",
+    "title": "石油化学プラント配管・機械保全技術者",
+    "wage": {
+      "type": "monthly",
+      "min": 330000,
+      "max": 460000
+    },
+    "work": {
+      "hours": "08:00-17:00",
+      "night_shift": false
+    },
+    "environment": {
+      "indoor": false,
+      "air_conditioned": false
+    },
+    "physical_load": 3,
+    "qualifications": {
+      "required": [],
+      "preferred": [
+        "denko2",
+        "hazmat4"
+      ]
+    },
+    "qualification_support": true,
+    "source_id": "src_sample_job"
+  },
+  {
+    "id": "job_0004",
+    "source": "sample",
+    "city_id": "choshi",
+    "company": "銚子ウィンドサービス(株)",
+    "occupation_id": "offshore_wind_technician",
+    "title": "洋上風力発電設備 定期検査技術員",
+    "wage": {
+      "type": "monthly",
+      "min": 320000,
+      "max": 480000
+    },
+    "work": {
+      "hours": "08:00-17:00",
+      "night_shift": false
+    },
+    "environment": {
+      "indoor": false,
+      "air_conditioned": false
+    },
+    "physical_load": 3,
+    "qualifications": {
+      "required": [
+        "denko2"
+      ],
+      "preferred": []
+    },
+    "qualification_support": true,
+    "source_id": "src_sample_job"
+  }
+]
