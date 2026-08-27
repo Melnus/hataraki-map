@@ -1,0 +1,42 @@
+{
+  "version": "0.4.0",
+  "regions": [
+    "kashiwa.json",
+    "narita.json",
+    "ichihara.json",
+    "choshi.json"
+  ],
+  "facilities": [
+    "automated_warehouse.json",
+    "airport_cargo_terminal.json",
+    "petrochemical_complex.json",
+    "offshore_wind_hub.json"
+  ],
+  "occupations": [
+    "facility_maintenance.json",
+    "forklift_operator.json",
+    "plant_maintenance.json",
+    "offshore_wind_technician.json"
+  ],
+  "qualifications": [
+    "denko2.json",
+    "denko1.json",
+    "forklift.json",
+    "hazmat4.json"
+  ],
+  "jobs": [
+    "jobs.json"
+  ],
+  "logistics": [
+    "logistics.json"
+  ],
+  "graph": [
+    "relationships.json"
+  ],
+  "models": [
+    "demand-model.json"
+  ],
+  "sources": [
+    "sources.json"
+  ]
+}
